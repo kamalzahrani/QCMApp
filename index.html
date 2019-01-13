@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+	<!-- fonts google -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+    <title>My Landing Page App</title>
+	<style>
+	
+		@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+		body{
+			background-color: 0;
+		}
+		.navbar-brand{
+			font-size: 1.2em;
+			font-family: 'Lobster', cursive;
+			margin-left: 60px;
+		}
+		.navbar-brand:hover{
+			font-family: 'Permanent Marker', cursive;
+			font-size: 1.5em;
+			margin-left: 75px;
+		}
+		.navbar-nav li{
+			margin: 15px;
+		}
+		.nav-item{
+			text-transform: uppercase;
+		}
+		.nav-link:hover{
+			color: #dcdde1 !important;
+			border-bottom:3px solid #f5f6fa;
+		}
+		.dropdown-menu{
+			background-color: #353b48;
+		}
+		.dropdown-item{
+			color: #f5f6fa;
+		}
+		.dropdown-item:hover{
+			background-color: #c7ecee;
+			color: #30336b;
+		}
+		
+		#MainPage{
+			background-image: url("images/bg.jpg");
+		}
+		.buttonText{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		#banner_1{
+			margin: 25% 10%;
+			
+			text-align: center;
+			font-family: 'Courgette', cursive;
+		}
+		#banner_1 h2, h3{
+			font-size: 200%;
+			
+			color: white;
+		}
+		.MyFormLanding{
+			background-color:white;
+			margin: 25% 10%;
+			border: 2px solid #576574;
+			padding: 10% 5%;
+			border-radius:15px;
+		}
+		
+		.MyButtonLinding{
+			width: 50%;
+			margin : 0 auto;
+		}
+		.features{
+			margin-bottom: 20px;
+
+		}
+		
+		#banner_2{
+			margin-top: 15%;
+			margin-bottom: 10%;
+			text-align: center;
+			font-family: 'Courgette', cursive;
+			margin-top: 25px;
+			
+		}
+		#QueFaire{
+				
+		}
+		h4{
+			text-align: center;
+			margin-bottom: 20px;
+			font-family: 'Courgette', cursive;
+		}
+		.Administrateurs ,.Professeurs ,.Etudiants{
+			
+			margin: 15px;
+		}
+		.parents{
+			margin-bottom:30px;
+		
+		}
+		p{
+			font-size: 1em;
+		}
+		/* CSS de la page des prix et offres */
+		.Mybanner{
+			text-align: center;
+			margin: 30px;
+			font-family: 'Francois One', sans-serif;
+			font-size: 35px;
+		}
+		
+		.head_table{
+			background-color: #0539c6;
+			text-align: center;
+			height: 60px;
+			width: 100%;
+			
+			
+		}
+		.head_table h3{
+			font-family: 'Francois One', sans-serif;
+			padding-top: 5px;
+			font-weight: 500;
+			font-size: 40px;
+			color: white;
+		}
+		
+		.price{
+			font-size: 200%;
+			padding-top: 10px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.ok{
+			color: green;
+			margin-right: 10px;
+			font-size: 150%;
+		}
+		.No{
+			color: red;
+			margin-right: 10px;
+			font-size: 150%;
+			
+		}
+		.Mybutton{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.Mytable{
+			border: 2px solid #0539c6;
+			border-radius: 5px;
+			margin: 15px;
+		}
+		.Myoffer{
+			margin-top: 20px;
+			margin-bottom: 15px;
+		}
+		.remove:hover{
+			text-decoration: line-through;
+		}
+		
+		/* Footer CSS page */
+		
+		#footer {
+			background: #0539c6 !important;
+		}
+		.titleFooter{
+			font-family: 'Quicksand', sans-serif;
+			margin-top: 20px;
+			padding-left: 10px;
+			border-left: 3px solid #eeeeee;
+			padding-bottom: 6px;
+			margin-bottom: 20px;
+			color:#ffffff;
+		}
+		.footer_banner{
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+			margin-top: 20px;
+		}
+		.footer_banner a:hover{
+			font-family: 'Lobster', cursive;
+		}
+		.footer_banner a{
+			text-decoration: none;
+		}
+		.footer a{
+			color:#ffffff;
+			text-decoration: none !important;
+			background-color: transparent;
+			-webkit-text-decoration-skip: objects;
+		}
+		.footer ul.social li{
+			padding: 3px 0;
+		}
+		.footer ul.social li a i {
+			margin-right: 5px;
+			font-size:25px;
+			-webkit-transition: .5s all ease;
+			-moz-transition: .5s all ease;
+			transition: .5s all ease;
+		}
+		.footer ul.social li:hover a i {
+			font-size:30px;
+			margin-top:-10px;
+		}
+		.footer ul.social li a,
+		.footer ul.quick-links li a{
+			color:#ffffff;
+		}
+		.footer ul.social li a:hover{
+			color:#eeeeee;
+		}
+		.footer ul.quick-links li{
+			padding: 3px 0;
+			-webkit-transition: .5s all ease;
+			-moz-transition: .5s all ease;
+			transition: .5s all ease;
+		}
+		.footer ul.quick-links li:hover{
+			padding: 3px 0;
+			margin-left:5px;
+			font-weight:700;
+		}
+		.footer ul.quick-links li a i{
+			margin-right: 5px;
+		}
+		.footer ul.quick-links li:hover a i {
+			font-weight: 700;
+		}
+		.footer p{color:#ffffff;}
+		
+
+		
+	</style>
+  </head>
+  <body>
+		  
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="#MainPage"><h2>QCMapp</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#MainPage">Home<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item ">
+        <a class="nav-link" href="#features">Fonctionnalites</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Tarifs"> Tarifs</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Voir Plus
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Nos clients</a>
+          <a class="dropdown-item" href="#">Societe</a>
+          <a class="dropdown-item" href="#">Contactez Nous</a>
+        </div>
+      </li>
+	  <li class="nav-item">
+		<form class="form-inline">
+		<button type="submit" class="btn btn-light"><span class="buttonText">Connexion</span></button>
+	</form>
+	  </li>
+	  <li class="nav-item">
+		<form class="form-inline">
+		<button type="submit" class="btn btn-success ">Essai Gratuit</button>
+	</form>
+	  </li>
+    </ul>
+	
+  </div>
+</nav>
+<section id="MainPage">
+	
+<div class="container">
+  <div class="row">
+    <div class="col-sm" >
+		<div id="banner_1">
+			<h2>Gerer vos examens QCM</h2>
+			<h3>en utilisant QCMapp</h3>
+		</div>
+    </div>
+    <div class="col-sm">
+		<div class="MyFormLanding">
+			<form>
+				<div class="form-group">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Email address" aria-label="Username" aria-describedby="basic-addon1">
+
+					</div>
+						
+				</div>
+				<div class="form-group">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+						</div>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					
+				</div>
+				  <div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">J'accepte <a href="#">les conditions generales</a></label>
+				  </div>
+				  <button type="submit" class="btn btn-primary btn-lg btn-block MyButtonLinding">Submit</button>
+			</form>
+		</div>
+    </div>
+  </div>
+</div>
+
+</section>
+<section id="features">
+	<div class="container features">
+	<div class="row" id="banner_2" >
+				<div class="col-md-6 offset-3">
+					<div ><h2>Que peut faire QCMapp</h2></div>
+				</div>
+	</div>
+	
+	
+	<div class="row QueFaire" id="QueFaire">
+				<div class="col Administrateurs">
+				  <h4>Administrateurs</h4>
+				  <P class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+				  Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les 
+				  années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen
+				  de polices de texte.</P>
+				</div>
+				<div class="col Professeurs">
+				  <h4>Professeurs</h4>
+				  <P class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+				  Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les 
+				  années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen
+				  de polices de texte.</P>
+				</div>
+				<div class="col Etudiants">
+				  <h4>Etudiants</h4>
+				  <P class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+				  Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les 
+				  années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen
+				  de polices de texte.</P>
+				</div>
+	</div>
+
+	
+	
+			<div class="row parents">
+				<div class="col-md-8 offset-2" >
+					<h4>Parents</h4>
+					<P class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+				  Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les 
+				  années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen
+				  de polices de texte.</P>
+				</div>
+			</div>
+		
+</div>
+
+</section>
+<section id="Tarifs">
+	<div class="container">
+			<div class="row Mybanner">
+				<div class="col-md-6 offset-3">
+					<h2><em>Nos Offres et Tarifs</em></h2>
+				</div>
+			</div>
+			<div class="row Myoffer">
+				<div class="col-sm">
+					<div class="Mytable">
+						<div class="head_table">
+							<h3>Gratuit</h3>
+						</div>
+						<div class="content_table">
+							<div class="price">0.00 $</div>
+							<ul class="list-group list-group-flush">
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>  Cras justo odio</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Dapibus ac facilisis in</li>
+							  <li class="list-group-item"><i class="fas fa-times No"></i><span class="remove">Morbi leo risus</span></li>
+							  <li class="list-group-item"><i class="fas fa-times No"></i><span class="remove">Porta ac consectetur ac</span></li>
+							  <li class="list-group-item"><i class="fas fa-times No"></i><span class="remove">Vestibulum at eros</span></li>
+							</ul>
+							<button type="button" class="btn btn-outline-success btn-lg btn-block Mybutton">Essayer</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+				  <div class="Mytable">
+						<div class="head_table">
+							<h3>De Base</h3>
+						</div>
+						<div class="content_table">
+							<div class="price">49.95 $</div>
+							<ul class="list-group list-group-flush">
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>  Cras justo odio</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Dapibus ac facilisis in</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Morbi leo risus</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Porta ac consectetur ac</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Vestibulum at eros</li>
+							</ul>
+							<button type="button" class="btn btn-outline-success btn-lg btn-block Mybutton">Obtenir</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+				  <div class="Mytable">
+						<div class="head_table">
+							<h3>Illimite</h3>
+						</div>
+						<div class="content_table">
+							<div class="price">149.95 $</div>
+							<ul class="list-group list-group-flush">
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>  Cras justo odio</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Dapibus ac facilisis in</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Morbi leo risus</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Porta ac consectetur ac</li>
+							  <li class="list-group-item"><i class="fas fa-check ok"></i>Vestibulum at eros</li>
+							</ul>
+							<button type="button" class="btn btn-outline-success btn-lg btn-block Mybutton">Obtenir</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</section>
+<section id="footer">
+		<div class="container-fluid footer">
+		<div class="row ">
+			<div class="col-sm footer_banner">
+				<div><a href="#"><h2>QCMapp</h2></a> </div>
+			 
+			</div>
+			<div class="col-sm">
+				<div class="titleFooter">Produits</div>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Fonctionnalites</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tarifs</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Disponibilite</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Voir un demo</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				
+			 
+			</div>
+			<div class="col-sm">
+				<div class="titleFooter">Ressources</div>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Fonctionnalites</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tarifs</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Disponibilite</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Voir un demo</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				
+			</div>
+			<div class="col-sm">
+			<div class="titleFooter"> A propos</div>
+				<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Fonctionnalites</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tarifs</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Disponibilite</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Voir un demo</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+				</ul>
+			</div>
+			<div class="col-sm">
+				<div class="titleFooter">Articles recents</div>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Fonctionnalites</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tarifs</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Disponibilite</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Voir un demo</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+			  
+			</div>
+			
+		</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
+					<p><u><a href="#">Kamal Aboujihad Snippes  </a></u> se sont des essais simples pour monter au monde mes competences en Bootstrap</p>
+					<p><i class="far fa-copyright"></i> All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Aboujihad 2019</a></p>
+				</div>
+				</hr>
+			</div>
+		
+	</div>
+	
+	
+	
+
+	</section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
